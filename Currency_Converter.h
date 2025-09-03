@@ -9,10 +9,10 @@ int choosecurrency(void);
 
 // === CAD to USA ===
 double getCADInput(void);
-double giveUSAFromoCAD(double input);
+double giveUSDFromCAD(double input);
 
 // === CAD to EUR ===
-double giveEURtoCAD(double input);
+double giveEURFromCAD(double input);
 
 // ===  USD to CAN ===
 double getUSDInput(void);
@@ -20,4 +20,5 @@ double giveCADFromUSD(double input);
 
 
 #endif // CURRENCY_CONVERTER
+
 
