@@ -21,21 +21,11 @@ int main() {
 	do {
 		operation = chooseProgram();
 		switch (operation) {
-		case 1:
-			runGradeCalculator();
-			break;
-		case 2:
-			runUnitConverter();
-			break;
-		case 3:
-			runCurrencycurrency();
-			break;
-		case 4:
-			runInterestCalculator();
-			break;
-		case 5:
-			Goodbye;
-			break;
+		case 1: runGradeCalculator(); break;
+		case 2: runUnitConverter(); break;
+		case 3: runCurrencycurrency(); break;
+		case 4: runInterestCalculator(); break;
+		case 5: Goodbye; break;
 		}
 
 		printf("\n");
@@ -73,3 +63,4 @@ int chooseProgram(void) {
 
 	return operation;
 }
+
