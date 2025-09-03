@@ -15,19 +15,19 @@ void runCurrencycurrency(void) {
 	if (operation == 1) {
 		// CAD to USD
 		input = getCADInput();
-		output = giveUSDtoCAD(input);
+		output = giveUSDFromCAD(input);
 		printf("\nIf you have %.2f CAD, it is equal to %.2f USD.\n", input, output);
 	}
 	else if (operation == 2) {
 		// CAD to EUR
 		input = getCADInput();
-		output = giveEURtoCAD(input);
+		output = giveEURFromCAD(input);
 		printf("\nIf you have %.2f CAD, it is equal to %.2f EUR.\n", input, output);
 	}
 	else if (operation == 3) {
 		// USD to CAD
 		input = getUSDInput();
-		output = giveCADtoUSD(input);
+		output = giveCADFromUSD(input);
 		printf("\nIf you have %.2f USD, it is equal to %.2f CAD.\n", input, output);
 	}
 
@@ -72,12 +72,12 @@ double getCADInput(void) {
 	}
 	return cad;
 }
-double giveUSDtoCAD(double input) {
+double giveUSDFromCAD(double input) {
 	return input * 0.74;
 }
 
 // === CAD to EUR ===
-double giveEURtoCAD(double input) {
+double giveEURFromCAD(double input) {
 	return input * 0.68;
 }
 
@@ -100,7 +100,8 @@ double getUSDInput(void) {
 	}
 	return usd;
 }
-double giveCADtoUSD(double input) {
+double giveCADFromUSD(double input) {
 	return input * 1.35; // Example: 1 USD = 1.35 CAD
 }
+
 
